@@ -39,7 +39,7 @@ public class TaskController {
 	@PostMapping("/addTask")
 	public ModelAndView taskAdd(Task task) {
 		taskRep.save(task);
-		return new ModelAndView("redirect:/tasklist/"+task.getUser().getId());
+		return new ModelAndView("redirect:/tasklist/" +task.getUser().getId());
 	}
 	
 	@RequestMapping("/complete")

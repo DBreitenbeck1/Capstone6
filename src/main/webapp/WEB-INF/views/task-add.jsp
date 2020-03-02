@@ -20,7 +20,6 @@
 	<h3>Add a Task</h3>
 
 
-	
 		<form method="post" action="/tasklist/addTask">
 			<p>
 				<label> Description: </label> <input type="text" required
@@ -33,20 +32,13 @@
 					value="mm/dd/yyyy">
 			</p>
 
-
-			<div>
-			
-				<label>User</label> <select name="user">
-
-					<option value="${user.id }">${user.name }</option>
-
-				</select>
-
+			<div>			
+				
+					<input type="hidden" name="user" value="${user.id}">
+				
 			</div>
 
-
-
-			<button type="submit" name="id" value =${user.id }>Add Task</button>
+			<button type="submit">Add Task</button>
 
 		</form>
 </body>

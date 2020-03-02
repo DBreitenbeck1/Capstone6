@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.container{
+	text-align:center;
+	padding:20px;
+}
+
+.head{
+	text-align:center;
+	color: ivory;
+	background-color: blue;
+	padding:20px;
+}
+
+body{
+	background-color: lavender;
+}
+
+.table, th{
+	border-top-style: solid;
+	border-bottom-style: solid;
+	background-color: lightblue;
+}
+
+.table td, th{
+	border-right-style: solid;
+	border-left-style: solid;
+	
+	
+}
+
+.comp{background-color:lightgreen;}
+.incomp{background-color:pink;}
